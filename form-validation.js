@@ -11,16 +11,21 @@ function validate(){
   //Turn the username items red
   document.getElementById("usernameGroup").classList.add("has-error");
 }
-else
+  else
 {
   document.getElementById("usernameGroup").classList.add("has-success");
 }
 
-
+  if(passEntered == "password") {
   //Show message that there is an error with the password...
   document.getElementById("passwordError").innerHTML="Bad password.";
   document.getElementById("passwordError").classList.remove("hidden-message");
   document.getElementById("passwordError").classList.add("shown-message");
   //Turn the password items red
   document.getElementById("passwordGroup").classList.add("has-error");
+}
+  else
+{ 
+  document.getElementById("passwordGroup").classList.add("has-success")
+}
 }
