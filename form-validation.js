@@ -1,3 +1,5 @@
+
+/** comment **/
 function validate(){
   //Grab the user's input and store in variables
   var userEntered = document.getElementById("user").value;
